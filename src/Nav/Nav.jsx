@@ -13,6 +13,10 @@ function Nav() {
        <Link to="/about">About</Link>
        <Link to="/user">User</Link>
        <Link to="/dash">Dashboard</Link>
+       <Link to="/gallery">Gallery</Link>
+
+
+
 
 
     </div>

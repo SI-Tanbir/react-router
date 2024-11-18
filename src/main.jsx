@@ -12,6 +12,8 @@ import About from './components/About/About.jsx';
 import Contract from './components/Contract/Contract.jsx';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import User from './components/User/User.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import PostDetails from './components/PostDetails/PostDetails.jsx';
 
  
 
@@ -38,6 +40,16 @@ const router =createBrowserRouter([
         loader:()=>fetch('https://jsonplaceholder.typicode.com/users'),
         element:<User></User>
 
+      },
+      {
+        path:'/gallery',
+        loader:()=>fetch('https://jsonplaceholder.typicode.com/posts'),
+        element:<Gallery></Gallery>
+      },
+      {
+        path:'/post/:postId',
+        loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        element:<PostDetails></PostDetails>
       }
     ]
 
