@@ -12,7 +12,7 @@ const Home=() => {
         <div>
             <Nav></Nav>
             {
-                navigation.status === 'Loading'?
+                navigation.state === "loading"?
                 <span className="loading loading-ball loading-lg"></span>
 
                 :
