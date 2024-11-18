@@ -1,18 +1,25 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Nav from "../../Nav/Nav";
 import Footer from "../Footer/Footer";
 
 
 const Home=() => {
+    // cont navigation = useNavigation();
 
 
     return(
 
         <div>
             <Nav></Nav>
+            {/* {
+                navigation.status === 'Looding'?
+                <p>Loading..</p>
+                :
+                <Outlet></Outlet>
+            } */}
 
            
-            <Outlet></Outlet>
+            
 
             <Footer></Footer>
 

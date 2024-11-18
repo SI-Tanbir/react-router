@@ -14,6 +14,7 @@ import Dashboard from './components/Dashboard/Dashboard.jsx';
 import User from './components/User/User.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import PostDetails from './components/PostDetails/PostDetails.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
  
 
@@ -21,6 +22,7 @@ const router =createBrowserRouter([
   {
     path:'/',
     element:<Home></Home>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
 
       {
@@ -41,6 +43,7 @@ const router =createBrowserRouter([
         element:<User></User>
 
       },
+      
       {
         path:'/gallery',
         loader:()=>fetch('https://jsonplaceholder.typicode.com/posts'),

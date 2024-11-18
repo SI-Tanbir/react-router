@@ -1,25 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, NavLink } from 'react-router-dom'
+import './Nav.css'
 function Nav() {
   return (
     
-    <div className='flex gap-10 justify-center bg-purple-500'>
+    <nav className='flex gap-10 justify-center bg-purple-500'>
 
 
         
-          <Link to="/">Home</Link>
-        <Link to="/contract">Contract</Link>
-       <Link to="/about">About</Link>
-       <Link to="/user">User</Link>
-       <Link to="/dash">Dashboard</Link>
-       <Link to="/gallery">Gallery</Link>
+          <NavLink to="/">Home</NavLink>
+        <NavLink to="/contract">Contract</NavLink>
+        <NavLink to="/about">About</NavLink>
+          
+       <NavLink to="/user">User</NavLink>
+       <NavLink to="/dash">Dashboard</NavLink>
+       <NavLink to="/gallery">Gallery</NavLink>
 
 
 
 
 
-    </div>
+    </nav>
   
 )
 

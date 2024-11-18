@@ -12,6 +12,9 @@ function PostDetails() {
     }
 
 
+        
+
+
   return (
     <div className="m-8 bg-slate-200 border">
 
