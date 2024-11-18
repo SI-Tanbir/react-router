@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 
 const Home=() => {
-    cont navigation = useNavigation();
+    const navigation = useNavigation();
 
 
     return(
@@ -12,7 +12,7 @@ const Home=() => {
         <div>
             <Nav></Nav>
             {
-                navigation.status === 'Looding'?
+                navigation.status === 'Loading'?
                 <p>Loading..</p>
                 :
                 <Outlet></Outlet>
