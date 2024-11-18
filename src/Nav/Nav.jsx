@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom'
 function Nav() {
   return (
     
-    <div>
+    <div className='flex gap-10 justify-center bg-purple-500'>
 
 
         
           <Link to="/">Home</Link>
         <Link to="/contract">Contract</Link>
        <Link to="/about">About</Link>
-       
+       <Link to="/dash">Dashboard</Link>
+
+
     </div>
   
 )

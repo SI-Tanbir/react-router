@@ -10,6 +10,7 @@ import Home from './components/Home/Home.jsx';
 import Nav from './Nav/Nav.jsx';
 import About from './components/About/About.jsx';
 import Contract from './components/Contract/Contract.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
 
  
 
@@ -26,6 +27,10 @@ const router =createBrowserRouter([
       {
         path:'/contract',
         element:<Contract></Contract>
+      },
+      {
+        path:'/dash',
+        element:<Dashboard></Dashboard>
       }
     ]
 
