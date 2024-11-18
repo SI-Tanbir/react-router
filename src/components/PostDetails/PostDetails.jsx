@@ -16,11 +16,11 @@ function PostDetails() {
 
 
   return (
-    <div className="m-8 bg-slate-200 border">
+    <div className="m-8 p-4 rounded-lg bg-slate-200 border">
 
         <h3>Title:{data.title}</h3>
         <p>body:{data.body}</p>
-        <button onClick={goBack}>Go Back</button>
+        <button className="bg-amber-500 rounded-md p-2 m-2" onClick={goBack}>Go Back</button>
 
     </div>
   )

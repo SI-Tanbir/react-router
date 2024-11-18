@@ -22,7 +22,7 @@ function Gallery() {
 // 1
 
 
-
+console.log(data)
   return (
     <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)'}}>
 
@@ -30,10 +30,11 @@ function Gallery() {
             data.map((res,index)=>(
             <div key={index} style={{margin:'10px',border:'2px solid red' }}>
 
-               <p>{res.title}</p>
+               <p>postId: {res.id}</p>
+               <p>title: {res.title}</p>
 
               
-             <Link to={`/post/${res.id}`}>Post Details</Link>
+             <Link  className="bg-amber-500 p-[4px] rounded-md " to={`/post/${res.id}`}>Post Details</Link>
 
             </div>
                 ))
